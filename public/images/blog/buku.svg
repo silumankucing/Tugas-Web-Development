@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak buku">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <rect x="276" y="150" width="448" height="325" rx="6" fill="#111c2f"/>
+    <rect x="276" y="150" width="86" height="325" rx="6" fill="#4aa8ea"/>
+    <line x1="404" y1="226" x2="654" y2="226" stroke="#d8e6f7" stroke-width="12" stroke-linecap="round"/>
+    <line x1="404" y1="272" x2="592" y2="272" stroke="#273d5e" stroke-width="8" stroke-linecap="round"/>
+    <line x1="404" y1="306" x2="624" y2="306" stroke="#273d5e" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="716" cy="512" r="26" fill="#8fd0ff"/>
+</svg>

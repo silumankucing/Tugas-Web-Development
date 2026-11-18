@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak musik">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <circle cx="500" cy="312" r="148" fill="none" stroke="#273d5e" stroke-width="10"/>
+    <circle cx="500" cy="312" r="86" fill="none" stroke="#4aa8ea" stroke-width="10"/>
+    <circle cx="500" cy="312" r="24" fill="#8fd0ff"/>
+    <line x1="152" y1="490" x2="848" y2="490" stroke="#1b2b45" stroke-width="10" stroke-linecap="round"/>
+    <line x1="152" y1="522" x2="620" y2="522" stroke="#1b2b45" stroke-width="10" stroke-linecap="round"/>
+</svg>

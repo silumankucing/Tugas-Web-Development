@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak memasak">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <ellipse cx="500" cy="338" rx="226" ry="118" fill="#111c2f"/>
+    <ellipse cx="500" cy="338" rx="158" ry="74" fill="#1b2b45"/>
+    <path d="M290 290 Q500 226 710 290" fill="none" stroke="#4aa8ea" stroke-width="8"/>
+    <circle cx="500" cy="338" r="26" fill="#8fd0ff"/>
+    <line x1="152" y1="504" x2="848" y2="504" stroke="#273d5e" stroke-width="8" stroke-linecap="round"/>
+</svg>

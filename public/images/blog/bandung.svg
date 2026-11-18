@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak perjalanan">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <path d="M152 452 L338 266 L438 366 L566 238 L848 452 Z" fill="#1b2b45"/>
+    <circle cx="752" cy="188" r="58" fill="#8fd0ff"/>
+    <path d="M152 452 H848" stroke="#2d7fbf" stroke-width="3"/>
+    <path d="M152 488 H520" stroke="#273d5e" stroke-width="3"/>
+</svg>

@@ -1,0 +1,228 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+/*
+|--------------------------------------------------------------------------
+| Design Tokens — Dark Minimal Blue
+|--------------------------------------------------------------------------
+| Palet gelap bernuansa navy dengan aksen biru yang dipakai secukupnya:
+| tombol primer, status aktif, fokus, dan hover. Token berikut otomatis
+| menghasilkan utility Tailwind (bg-night-900, text-neon-300, dst.).
+|
+| Catatan: --color-white tetap putih agar utility seperti bg-white/5 dan
+| border-white/10 bekerja sebagai lapisan translucent di atas latar gelap.
+|
+*/
+
+@theme {
+    --font-sans: 'Oxanium', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Oxanium', ui-sans-serif, system-ui, sans-serif;
+
+    /* Latar gelap bernuansa biru */
+    --color-night-950: #060a12;
+    --color-night-900: #0b1220;
+    --color-night-850: #0d1626;
+    --color-night-800: #111c2f;
+    --color-night-700: #1b2b45;
+    --color-night-600: #273d5e;
+
+    /* Aksen biru minimal */
+    --color-neon-100: #eaf6ff;
+    --color-neon-200: #c3e6ff;
+    --color-neon-300: #8fd0ff;
+    --color-neon-400: #4aa8ea;
+    --color-neon-500: #2d7fbf;
+
+    /* Skala teks */
+    --color-mist-100: #eef5ff;
+    --color-mist-200: #d8e6f7;
+    --color-mist-300: #b6c8de;
+    --color-mist-400: #93a9c4;
+    --color-mist-500: #6f86a3;
+
+    --color-white: #ffffff;
+
+    --animate-float: none;
+    --animate-float-slow: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Base
+|--------------------------------------------------------------------------
+*/
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--color-night-950);
+        color: var(--color-mist-300);
+        text-rendering: optimizeLegibility;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-display);
+        color: var(--color-mist-100);
+    }
+
+    ::selection {
+        background-color: color-mix(in oklab, var(--color-neon-400) 30%, transparent);
+        color: var(--color-mist-100);
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-neon-400);
+        outline-offset: 3px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--color-night-950);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--color-night-700);
+        border-radius: 9999px;
+        border: 2px solid var(--color-night-950);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--color-night-600);
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Components
+|--------------------------------------------------------------------------
+| Hanya gaya visual yang sulit atau berulang bila ditulis dengan utility
+| class. Sebagian besar komponen tetap memakai utility Tailwind di Blade.
+|
+*/
+
+@layer components {
+    .container-x {
+        width: 100%;
+        max-width: 78rem;
+        margin-inline: auto;
+        padding-inline: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+        .container-x {
+            padding-inline: 2rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container-x {
+            padding-inline: 2.5rem;
+        }
+    }
+
+    /* Permukaan kartu minimalis: panel navy solid dengan garis rambut */
+    .surface {
+        background-color: var(--color-night-900);
+        border: 1px solid var(--color-night-700);
+    }
+
+    /* Judul aksen: tanpa gradien, memakai warna teks utama */
+    .text-gradient {
+        color: var(--color-mist-100);
+        background-image: none;
+    }
+
+    /* Dekorasi latar dinonaktifkan pada tema minimalis */
+    .hero-grid,
+    .orb {
+        display: none;
+    }
+
+    /* Header berubah saat halaman di-scroll (class ditambahkan oleh JS) */
+    .site-header {
+        transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .site-header.is-scrolled {
+        background-color: rgba(6, 10, 18, 0.92);
+        border-color: var(--color-night-700);
+        box-shadow: 0 18px 40px -32px rgba(74, 168, 234, 0.45);
+    }
+
+    /* Panel navigasi mobile */
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.is-open {
+        display: block;
+    }
+
+    /* Spasi vertikal standar antar section */
+    .section {
+        padding-block: 4.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        .section {
+            padding-block: 6rem;
+        }
+    }
+
+    /* Konten artikel blog */
+    .article-body > * + * {
+        margin-top: 1.5rem;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Animasi Reveal (IntersectionObserver)
+|--------------------------------------------------------------------------
+| Kelas .js ditambahkan inline di <head> agar konten tetap terlihat ketika
+| JavaScript dinonaktifkan.
+|
+*/
+
+html.js [data-reveal] {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+html.js [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    html.js [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .animate-float,
+    .animate-float-slow {
+        animation: none;
+    }
+}

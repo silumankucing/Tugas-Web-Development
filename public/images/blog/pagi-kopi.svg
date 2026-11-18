@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak pagi di kedai kopi">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <circle cx="742" cy="214" r="118" fill="#111c2f"/>
+    <circle cx="742" cy="214" r="72" fill="#4aa8ea"/>
+    <rect x="132" y="404" width="390" height="12" rx="6" fill="#d8e6f7"/>
+    <rect x="132" y="438" width="284" height="12" rx="6" fill="#273d5e"/>
+    <rect x="132" y="472" width="196" height="12" rx="6" fill="#1b2b45"/>
+    <rect x="132" y="172" width="74" height="74" rx="8" fill="#8fd0ff"/>
+</svg>

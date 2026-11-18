@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak meja kerja">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <rect x="152" y="168" width="286" height="286" rx="10" fill="#111c2f"/>
+    <rect x="196" y="212" width="198" height="198" fill="none" stroke="#273d5e" stroke-width="2"/>
+    <line x1="196" y1="311" x2="394" y2="311" stroke="#273d5e" stroke-width="2"/>
+    <circle cx="696" cy="311" r="96" fill="#4aa8ea"/>
+    <circle cx="696" cy="311" r="42" fill="#0b1220"/>
+    <rect x="560" y="452" width="280" height="10" rx="5" fill="#1b2b45"/>
+</svg>

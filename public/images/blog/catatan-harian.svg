@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-label="Ilustrasi abstrak catatan harian">
+    <rect width="1000" height="625" fill="#0b1220"/>
+    <rect x="72" y="72" width="856" height="481" fill="none" stroke="#1b2b45"/>
+    <rect x="300" y="146" width="400" height="348" rx="8" fill="#111c2f"/>
+    <line x1="350" y1="218" x2="650" y2="218" stroke="#d8e6f7" stroke-width="10" stroke-linecap="round"/>
+    <line x1="350" y1="268" x2="604" y2="268" stroke="#273d5e" stroke-width="8" stroke-linecap="round"/>
+    <line x1="350" y1="306" x2="628" y2="306" stroke="#273d5e" stroke-width="8" stroke-linecap="round"/>
+    <line x1="350" y1="344" x2="560" y2="344" stroke="#273d5e" stroke-width="8" stroke-linecap="round"/>
+    <rect x="640" y="120" width="122" height="12" rx="6" fill="#4aa8ea"/>
+</svg>
